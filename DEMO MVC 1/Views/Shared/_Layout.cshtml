@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"/> @*to link html with css*@
+</head>
+<body>
+    @*Start Header*@
+    <center>
+        <div>
+            <a href="/Home/Index" class="btn btn-danger">Home</a>
+            <a href="/Home/AboutUs" class="btn btn-primary">About us</a>
+            <a href="/Home/ContactUs" class="btn btn-success">Contact Us</a>
+            <a href="/Home/Privacy" class="btn btn-warning">Privacy Us</a>
+        </div>
+    </center>
+    
+    
+    <center>
+        <div>
+            @RenderBody()
+        </div>
+    </center>
+   
+    <center>
+        @*Start Footer*@
+        <div>
+            <p>CopyRights & Copy : Hesham @DateTime.Now.Year</p>
+        </div>
+    </center>
+    
+
+
+
+
+</body>
+</html>
