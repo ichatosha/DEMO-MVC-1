@@ -14,9 +14,10 @@ app.MapGet("/hesham", () => "Hello Hesham!");
 app.MapGet("/signIn", SignIn);
 
 // manage the route :
-app.MapControllerRoute(
+app.MapControllerRoute
+    (
     name: "Default",
-    pattern: "/{controller=Home}/{action=AboutUs}/{id?}"
+    pattern: "/{controller=Home}/{action=Index}/{id?}"
     );
 
 app.Run();
